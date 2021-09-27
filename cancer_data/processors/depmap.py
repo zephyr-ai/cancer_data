@@ -485,7 +485,7 @@ class Processors:
         return df
 
     @staticmethod
-    def crispr_common_essentials(raw_path: str) -> pd.DataFrame:
+    def depmap_crispr_essentials(raw_path: str) -> pd.DataFrame:
         """
         Process list of genes identified as dependencies in all cell lines.
         Args:
