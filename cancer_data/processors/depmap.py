@@ -462,3 +462,38 @@ class Processors:
         df = df.astype(np.float16)
 
         return df
+
+    @staticmethod
+    def depmap_crispr(raw_path: str) -> pd.DataFrame:
+        """
+        Process CRISPR gene effect dependencies with Chronos processing
+        Args:
+            raw_path (str): the complete path to the
+                            raw downloaded file
+        Returns:
+            Processed DataFrame
+        """
+
+        df = pd.read_csv(raw_path, index_col=0)
+
+        df.columns = map(parentheses_to_snake, df.columns)
+
+        df.index = df.index.astype(str)
+
+        df = df.astype(np.float16)
+
+        return df
+
+    @staticmethod
+    def crispr_common_essentials(raw_path: str) -> pd.DataFrame:
+        """
+        Process list of genes identified as dependencies in all cell lines.
+        Args:
+            raw_path (str): the complete path to the raw downloaded file
+        Returns:
+            Processed DataFrame, with snake-cased gene ids in column `id`
+        """
+        df = pd.read_csv(raw_path)
+        df["id"] = df["gene"].apply(lambda raw:parentheses_to_snake(raw))
+        return df
+
