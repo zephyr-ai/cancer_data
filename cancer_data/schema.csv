@@ -40,6 +40,8 @@ depmap_gene_tpm,primary_dataset,,DepMap gene expression,depmap,https://ndownload
 depmap_mutations,primary_dataset,,DepMap mutation calls,depmap,https://ndownloader.figshare.com/files/31315930,https://depmap.org/portal/download/,CCLE_mutations.csv,262777684,79325b0b725c47891a81e87b83a593ca,,
 depmap_damaging,secondary_dataset,depmap_mutations,Binary DepMap damaging mutation status,depmap,,,,,,,
 depmap_hotspot,secondary_dataset,depmap_mutations,Binary DepMap hotspot mutation status,depmap,,,,,,,
+depmap_crispr,primary_dataset,,CRISPR DepMap 21Q3 Public (Project Score Chronos),depmap,https://ndownloader.figshare.com/files/29125323,https://depmap.org/portal/download/,CRISPR_gene_effect.csv,368088922,62b3b36f6fb9a578ed03a9b6749d0dc8,,
+depmap_crispr_essentials,primary_dataset,,_Post-Chronos_ List of genes identified as dependencies in all lines @one per line,depmap,https://ndownloader.figshare.com/files/29125284,https://depmap.org/portal/download/,CRISPR_common_essentials.csv,25705,8cc3294d6ce242773f341dfac0880f08,,
 depmap_sanger_ceres,primary_dataset,,Sanger CRISPR (Project Score CERES),depmap,https://ndownloader.figshare.com/files/16623881,https://depmap.org/portal/download/,gene_effect.csv,115587486,c02a95824b29ea1ba206136bd475ae54,,
 depmap_sanger_chronos,primary_dataset,,Sanger CRISPR (Project Score Chronos),depmap,https://ndownloader.figshare.com/files/27676629,https://depmap.org/portal/download/,gene_effect.csv,114082726,f4330dca4fc0f74e2cf605524a2b4db2,,
 prism_primary_info,primary_dataset,,PRISM primary screen metadata,depmap,https://ndownloader.figshare.com/files/20237715,https://depmap.org/portal/download/,primary-screen-replicate-collapsed-treatment-info.csv,1185606,ec1da11ef0710944269cdd783b5bd341,,
